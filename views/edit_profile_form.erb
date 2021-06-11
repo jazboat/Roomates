@@ -1,0 +1,99 @@
+
+
+<section class="edit_profile">
+
+
+    <form action="/profiles/<%= profile['user_id'] %>" method="post">
+
+        <section class="section_1">
+        
+            <h2>Personal Details</h2>
+
+            <input type="hidden" name="_method" value="put">
+            <label class="firstNameLabel" for="first_name">First Name</label>
+            <input class="firstNameInput" type="text" name="first_name" id="first_name" value="<%= profile['first_name'] %>">
+
+            <label class="lastNameLabel" for="last_name">Last Name</label>
+            <input class="lastNameInput" type="text" name="last_name" id="last_name" value="<%= profile['last_name'] %>">
+
+            <label class="imageLabel" for="image_url">Profile Picture</label>
+            <input class="imageInput" type="text" name="image_url" id="image_url" value="<%= profile['image_url'] %>">
+
+
+
+
+
+            <h2>GENDER</h2>
+
+            <label class="femaleLabel" for="">Female</label>
+            <input class="femaleInput" type="radio" name="gender" id="gender" value="Female">
+
+            <label class="maleLabel" for="">Male</label>
+            <input class="maleInput" type="radio" name="gender" id="gender" value="Male">
+
+            <label class="binaryLabel" for="">Non-Binary</label>
+            <input class="binaryInput" type="radio" name="gender" id="gender" value="Non-Binary">
+
+            <label class="diverseLabel" for="">Gender Diverse</label>
+            <input class="diverseInput" type="radio" name="gender" id="gender" value="Gender-Diverse">
+
+
+
+
+            <h2>EMPLOYMENT STATUS</h2>
+
+            <label class="fullTimeLabel" for="">Full-Time</label>
+            <input class="fullTimeInput" type="radio" name="employment" id="employment" value="Full-Time">
+
+            <label class="partTimeLabel" for="">Part-Time/Casual</label>
+            <input class="partTimeInput" type="radio" name="employment" id="employment" value="Part-Time/Casual">
+
+            <label class="workingLabel" for="">Working Holiday</label>
+            <input class="workingInput" type="radio" name="employment" id="employment" value="Working Holiday">
+
+            <label class="retiredLabel" for="">Retired</label>
+            <input class="retiredInput" type="radio" name="employment" id="employment" value="Retired">
+
+            <label class="studentLabel" for="">Student</label>
+            <input class="studentInput" type="radio" name="employment" id="employment" value="Student">
+
+            <label class="unemployedLabel" for="">Unemployed</label>
+            <input class="unemployedInput" type="radio" name="employment" id="employment" value="Unemployed">
+
+
+
+
+            <h2>LIFE STYLE</h2>
+
+            <label class="smokerLabel" for="">Smoker</label>
+            <input class="smokerInput" type="radio" name="smoker" id="smoker" value="Smoker">
+
+            <label class="petsLabel" for="">Pets</label>
+            <input class="petsInput" type="radio" name="pets" id="pets" value="Pets">
+
+            <label class="childrenLabel" for="">Children</label>
+            <input class="childrenInput" type="radio" name="children" idd="children" value="Children">
+
+        </section>
+        
+        <button class="nextBtn">Next</button>
+
+        <section class="section2">
+
+            <h2>Fun Questions</h2>
+    
+            <label class="q1_label" for="">Adjective that best describes you when you’re drunk?</label>
+            <input class="q1_input" type="text" name="drunk" id="drunk" value="<%= profile['drunk'] %>">
+
+            <label class="q2_label" for="">What is your absolute, number one, biggest pet peeve?</label>
+            <input class="q2_input" type="text" name="peeve" id="peeve" value="<%= profile['peeve'] %>">
+    
+            <label class="q3_label" for="">Coffee or Tea?</label>
+            <input class="q3_label" type="text" name="tea_or_coffee" id="tea_or_coffee" value="<%= profile['tea_or_coffee'] %>">
+    
+        </section>
+
+        <input class="" type="submit" value="EDIT">
+</form>
+
+</section>

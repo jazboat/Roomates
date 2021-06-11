@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .hide {
+        display: none;
+    }
+
+    </style>
+</head>
+<body>
+
+<section class="create_profile">
+    <form action="/profiles"  method="post">
+        <section class="section-1">
+
+            <h2>ABOUT YOURSELF</h2>
+
+            <label for="">First Name</label>
+            <input type="text" name="first_name">
+
+            <label for="">Last Name</label>
+            <input type="text" name="last_name">
+
+            <label for="image_url">Profile Picture (image url)</label>
+            <input type="text" name="image_url">
+
+            <label for="">Female</label>
+            <input type="radio" name="gender" value="female">
+
+            <label for="">Male</label>
+            <input type="radio" name="gender" value="male">
+
+            <label for="">Non-Binary</label>
+            <input type="radio" name="gender" value="non-binary">
+
+            <label for="">Gender Diverse</label>
+            <input type="radio" name="gender" value="gender-diverse">
+
+
+    
+            <h2>EMPLOYMENT STATUS</h2>
+
+            <label for="">Working Full-Time</label>
+            <input type="radio" name="employment" value="full-time">
+
+            <label for="">Working Part-Time/Casual</label>
+            <input type="radio" name="employment" value="part-time/casual">
+
+            <label for="">Working Holiday</label>
+            <input type="radio" name="employment" value="working holiday">
+
+            <label for="">Retired</label>
+            <input type="radio" name="employment" value="retired">
+
+            <label for="">Student</label>
+            <input type="radio" name="employment" value="student">
+
+            <label for="">Unemployed</label>
+            <input type="radio" name="employment" value="unemployed">
+    
+    
+
+    
+            <h2>LIFE STYLE</h2>
+
+            <label for="">Smoker</label>
+            <input type="radio" name="smoker" value="Smoker">
+
+            <label for="">Pets</label>
+            <input type="radio" name="pets" value="Pets">
+
+            <label for="">Children</label>
+            <input type="radio" name="children" value="Children">
+    
+        </section>
+
+        <button>NEXT</button>
+
+        <section class="section-2">
+    
+        <label for="">Adjective that best describes you when you’re drunk?</label>
+        <input type="text" name="drunk">
+
+        <label for="">What is your absolute, number one, biggest pet peeve?</label>
+        <input type="text" name="peeve">
+    
+        <label for="">Coffee or Tea?</label>
+        <input type="text" name="tea_or_coffe">
+    
+    
+        </section>
+
+        <input type="submit" value="SUBMIT">
+
+    </form>
+</section>
+
+
+<script>
+    var page1 = document.querySelector('.page-1')
+    page1.classList.add('hide')
+    page1.classList.remove('hide')
+</script>
+

@@ -1,0 +1,37 @@
+
+<section class="user_profile">
+
+
+    <h1> <%= profile['first_name'] %> <%= profile['last_name'] %>  </h1>
+
+    <img src="<%= profile["image_url"] %>" alt="">
+
+
+    <div>
+    <p><span>Gender:</span> <%= profile['gender'] %></p>
+
+    <p><span>Employment:</span> <%= profile['employment'] %></p>
+
+    <p><span>Adjective that best describes you when you’re drunk?</span>  <%= profile['drunk'] %></p>
+
+    <p><span>What is your absolute, number one, biggest pet peeve?</span>  <%= profile['peeve'] %></p>
+
+    <p><span>Coffee or Tea?</span>  <%= profile['tea_or_coffee'] %></p>
+    </div>
+
+
+
+
+
+
+
+    <a href="/profiles/<%= profile['user_id'] %>/edit">edit</a>
+    
+    <form action="/profiles/<%= profile['user_id'] %>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button>Delete</button>
+    </form>
+
+
+
+</section>

@@ -1,0 +1,29 @@
+
+<section class="index_erb">
+
+<h1>R O O M M A T E S</h1>
+
+<a class="login" href="/login">Login</a>
+
+<a class="myProfile" href="/my_profile">Your Profile</a>
+
+<% profiles.each do |profile| %>
+
+    <h2>
+        <a href="/my_profile">
+        <%= profile["first_name"] %><%= profile["last_name"] %>
+        </a>
+    </h2>
+
+    <p><span>Adjective that best describes you when you’re drunk?</span>  <%= profile['drunk'] %></p>
+
+    <p><span>What is your absolute, number one, biggest pet peeve?</span>  <%= profile['peeve'] %></p>
+
+    <p><span>Coffee or Tea?</span>  <%= profile['tea_or_coffee'] %></p>
+
+    <img src="<%= profile["image_url"] %>" alt="">
+
+<% end%>
+
+</section>
+

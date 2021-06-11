@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roommates</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <section class="layout_erb">
+        <% if logged_in? %>
+
+        <p class="userName">
+        <%# <%= current_profile['first_name'] %> 
+        <%# <%= current_profile['last_name'] %> USER IS LOGGED-IN  
+        </p>
+
+        
+
+        <form action="/session" method="post">
+            <input type="hidden" name="_method" value="delete">
+            <button class="logoutBtn">logout</button>
+        </form>
+        <% end %>
+        <a href="/">Home</a>
+    </section>
+
+    
+    <%= yield %>
+
+</body>
+</html>

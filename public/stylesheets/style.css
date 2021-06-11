@@ -1,0 +1,93 @@
+body {
+    font-family: didot;
+    text-align: center;
+}
+
+button {
+    text-align: right;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    border: #f8cb62;
+}
+
+button:hover {
+    background-color: #f8cb62; /* Green */
+    color: white;
+}
+
+
+
+.layout_erb .userName {
+    text-align: right;
+    font-size: 11px;
+    background-color: rgb(253, 217, 174);
+    
+}
+
+
+.login_erb h1 {
+    font-size: 40px;
+
+
+}
+
+.index_erb {
+    background-color: bisque;
+
+
+}
+
+.index_erb h1 {
+    text-align: center;
+    font-size: 80px;
+
+}
+
+.index_erb a {
+    text-align: center;
+}
+
+.index_erb span {
+    font-weight: bolder;
+}
+
+.create_profile {
+
+}
+
+.sign_up {
+
+}
+
+.edit_profile {
+    background-color: burlywood;
+
+}
+
+.edit_profile .section_1  {
+    background-color: cornsilk;
+}
+
+.edit_profile .section_1 h2  {
+    text-align: center;
+}
+
+.edit_profile .section2 {
+
+    text-align: center;
+} 
+
+
+
+.user_profile span {
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+
+.user_profile h1 {
+
+    font-size: 35px;
+    
+
+}
